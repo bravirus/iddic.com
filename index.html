@@ -49,6 +49,14 @@ h1{font-family:'IBM Plex Mono',monospace;font-size:clamp(3rem,10vw,4.5rem);font-
 .footer{text-align:center;padding:1.5rem;font-size:.78rem;color:var(--muted)}
 @media(max-width:600px){.grid{grid-template-columns:1fr}.trust{flex-direction:column;align-items:center;gap:1rem}}
 </style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z974BMEM1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9Z974BMEM1');
+</script>
 </head>
 <body>
 <div class="hero">
@@ -102,14 +110,14 @@ h1{font-family:'IBM Plex Mono',monospace;font-size:clamp(3rem,10vw,4.5rem);font-
   <h2>Own IDDIC.com today</h2>
   <p>A rare 5-letter .COM at this price won't last.</p>
   <a class="cta" href="https://checkoutlink.godaddy.com/2daaee62-7338-467f-9e6a-f24647e0fda1" target="_blank">Buy Now — $2,000</a><br>
-  <a class="contact-link" href="mailto:rue77n3@gmail.com">Or contact us to make an offer →</a>
+  <a class="contact-link" href="mailto:contact@youremail.com">Or contact us to make an offer →</a>
 </div>
 <div class="footer">&copy; 2026 &middot; IDDIC.com &middot; Premium Domain For Sale</div>
 <script>document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{q.parentElement.classList.toggle('open')})})</script>
 <!-- Analytics -->
 <script data-goatcounter="https://bravirus.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script>
-document.querySelectorAll(".cta").forEach(function(btn){
+document.querySelectorAll(".cta").forEach(function(btn){btn.addEventListener("click",function(){if(typeof gtag==="function"){gtag("event","buy_click",{event_category:"conversion",event_label:"iddic.com"});}});
   btn.addEventListener("click", function(){
     if(window.goatcounter){
       window.goatcounter.count({
